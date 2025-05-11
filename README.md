@@ -38,13 +38,6 @@ The chatbot uses a simple RAG approach:
 3. The model generates a response based on the provided information
 4. The response is formatted and displayed in the chatbot interface
 
-## Setup
-
-1. Clone the repository
-2. Replace the API key in `config.js` with your own OpenAI API key
-3. Customize `data.txt` with your own information if needed
-4. Deploy to your web hosting service
-
 ## Usage
 
 To interact with the chatbot:
