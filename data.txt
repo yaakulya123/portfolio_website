@@ -1,0 +1,89 @@
+YAAKULYA SABBANI  
+ABU DHABI, UNITED ARAB EMIRATES  
++971 502111637 | ys5298@nyu.edu | LinkedIn: https://www.linkedin.com/in/yaakulya-sabbani/ | GitHub: https://github.com/yaakulya123 | Personal Blog: https://securenet.hashnode.dev/ | ORCID: 0009-0001-3689-3109 :contentReference[oaicite:0]{index=0}  
+
+SUMMARY  
+Professional Overview  
+Passionate about securing digital environments and mitigating cyber threats through AI-driven security solutions. With 2.5 years of experience, I specialize in threat detection, malware analysis, and incident response using machine learning. Recognized as India’s youngest ethical hacker (CEH at 18), achieved 92% phishing detection accuracy, and received the Best Intern Award for uncovering critical vulnerabilities. Also hold a patent for an innovative vulnerability security server, reinforcing my commitment to advancing the field. Dedicated to reducing cybercrime, strengthening policies, and leading impactful security initiatives. :contentReference[oaicite:1]{index=1}:contentReference[oaicite:2]{index=2}  
+
+EDUCATION  
+New York University, Abu Dhabi, UAE  
+Bachelors in Physical Computing (Interactive Media), GPA: 3.68/4.0 • Expected June 2026  
+• Minoring in Computer Science and Applied Design.  
+• Awards: Recipient of 100% Merit-Based Scholarship (Acceptance < 4%).  
+• Clubs: Community Outreach Head at International Robotics & Automation SIG; President of Research Nexus Club.  
+• Relevant Coursework: Quantum Computing, Cryptography, Cyberwarfare, Discrete Math and Physical Computing. :contentReference[oaicite:3]{index=3}:contentReference[oaicite:4]{index=4}  
+
+WORK EXPERIENCE (2 Years 5 Months)  
+Center for Quantum and Topological Systems – Middle East, Dubai, UAE  
+Machine Learning & Security Researcher at High Performance Computing Lab Dec 2023 – June 2024  
+• Developed and trained ML models using Python and TensorFlow to classify phishing emails and malicious URLs, achieving up to 92% accuracy on PhishTank & URLHaus benchmarks.  
+• Designed a Fake-News Detection Model with Random Forest, achieving 97.92% accuracy; implemented TF-IDF preprocessing and evaluated models (Logistic Regression 98%, Gradient Boosting 96.55%, Decision Tree 94.77%); integrated manual testing for real-time article evaluation.  
+• Conducted adversarial attacks on LLMs (prompt injection, jailbreak testing, data poisoning) and explored fine-tuning with reinforcement learning for stronger defenses. :contentReference[oaicite:5]{index=5}:contentReference[oaicite:6]{index=6}  
+
+Cyber Jagrithi (Safety For Women & Children), Hyderabad, India  
+Junior Cyber Security Cloud Analyst Intern | Fake News Check Team Lead Jan 2023 – May 2023  
+• Scanned websites daily for 4 months, reporting 32 vulnerabilities for remediation.  
+• Documented cloud/server security findings and strategic proposals in 21 reports and 18 presentations.  
+• Awarded Best Intern (out of 24) for uncovering vulnerabilities in Adversarial Simulation and OWASP Juice Shop via cloud pentests.  
+• Strengthened AWS S3 security for 12 NGO sites (1.3k+ users) by implementing encryption, IAM policies, and access controls. :contentReference[oaicite:7]{index=7}:contentReference[oaicite:8]{index=8}  
+
+YKS IT Services Pvt Ltd., Delhi, India  
+L1 SOC Analyst | Private Security Operation Center Feb 2022 – Jun 2022  
+• Monitored and analyzed 500+ Splunk SIEM alerts monthly, reducing false positives by 30%.  
+• Investigated phishing attacks and endpoint breaches using Nessus and CrowdStrike EDR, collaborating with L2 analysts for containment playbooks.  
+• Performed log analysis and network monitoring with Wireshark and Suricata, conducting real-time IP/domain/hash reputation lookups. :contentReference[oaicite:9]{index=9}:contentReference[oaicite:10]{index=10}  
+
+TECHNICAL SKILLS  
+Programming Languages: Python (3 yrs) | C/C++ (2 yrs) | R, Java (1 yr) | JavaScript, HTML, CSS (1.5 yrs)  
+Cybersecurity: Threat Intelligence, Reverse Engineering, Cryptography, Security Assessments, Threat Modeling, Vulnerability Assessment, AI Automation, NLP, Data Visualization, Predictive Modeling, Quantum Bit Manipulation  
+Soft Skills: Emotional Intelligence, Strategic Thinking, Adaptability, Time Management, Conflict Resolution, Presentation, Networking, Resilience  
+Languages: English, Telugu, Hindi, French :contentReference[oaicite:11]{index=11}:contentReference[oaicite:12]{index=12}  
+
+INTERNATIONAL CERTIFICATIONS & TECHNICAL QUALIFICATIONS  
+Licenses Overview: Completed all below by age 18  
+- Certified Ethical Hacker (CEH) | EC-Council (112/120) Jul 2024  
+- Network Defense Essentials (NDE) | EC-Council (93/100) Oct 2023  
+- Ethical Hacking Essentials (EHE) | EC-Council (100/100) Oct 2023  
+- Digital Forensics Essentials (DFE) | EC-Council (96/100) Sep 2023  
+- Certified Web Application Penetration Tester (WAPT) | ICORX Services Pvt Ltd Jul 2021  
+- Diploma in Offensive Security Training (Hands-On) | Tech Marshals Software R&D Jun 2020 – Dec 2020 :contentReference[oaicite:13]{index=13}:contentReference[oaicite:14]{index=14}  
+
+AWARDS & ACHIEVEMENTS  
+Rewards Overview:  
+1. World’s Top 1% Ranker on HackerRank; completed all competitive programming levels in collaboration with Harvard, UCLA, and Cornell.  
+2. 2nd Prize, University Hackathon – Falcon Currency Transfer Portal (Rijndael & Triple DES encryption), MENA Region.  
+3. Mentor, QHack 2024 Quantum Computing Hackathon.  
+4. 2nd Prize, State-Level MUN Debate on “Global Security and How Tech Changes the World.”  
+5. Winner, Ethical Hacking Student Training by Telangana Cops Cyber Crime Assessment (Govt. of India).  
+6. Featured for fraud-prevention campaigns during COVID-19 on a national NGO site (2 million+ reached; 450 participants; 37 volunteers).  
+7. 1st Place (22 teams), AI-Cyber Wave at Hackathon 2K22 (SIET); ₹25,000 reward.  
+8. Dual AP Achievement Award, FIITJEE World School: AP Computer Science (4/5) & AP Mechanics BC (3/5). :contentReference[oaicite:15]{index=15}  
+
+RESEARCH PAPERS, PATENTS & BOOKS  
+Patent  
+- Immortal Bug Hunting Server (IBHS), Application No. 202141035226; Patent Office Journal No. 33/2021 (13 Aug 2021), p. 35844. Link: https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_5003_1/Part-1.pdf :contentReference[oaicite:16]{index=16}:contentReference[oaicite:17]{index=17}  
+
+Books  
+- Python Programming – Crust to Core, ISBN 978-1-387-26192-5; Lulu Publications; Oct 4 2021. Link: https://www.lulu.com/shop/yaakulya-sabbani/python-programming-crust-to-core/ebook/product-4egvpj.html?page=1&pageSize=4 :contentReference[oaicite:18]{index=18}:contentReference[oaicite:19]{index=19}  
+- Securing Intelligence: Machine Learning Fundamentals, ISBN B0DMTH7V9N; SIPH; Nov 11 2024. Link: https://www.amazon.in/SECURING-INTELLIGENCE-MACHINE-LEARNING-FUNDAMENTALS/dp/B0DMTH7V9N :contentReference[oaicite:20]{index=20}:contentReference[oaicite:21]{index=21}  
+
+Research Chapters & Journals  
+- Optimizing Performance and Security in IoT Healthcare Networks with Cloud Data Analytics (publishing soon). Link: https://drive.google.com/file/d/12s3mLaEtlPwob6iP8IwfAbpOu9iSXz8o/view?usp=sharing :contentReference[oaicite:22]{index=22}:contentReference[oaicite:23]{index=23}  
+- SHANE – Smart Heart Rate Analysis and Notification System for Emergencies. Int’l Journal of Analytical and Experimental Modal Analysis (ISSN 0886-9367). Link: https://drive.google.com/file/d/1QsiBH1Djnd1dvZSGQdP9AkcMGQ9v6Tv8/view :contentReference[oaicite:24]{index=24}:contentReference[oaicite:25]{index=25}  
+- Cybersecurity Infrastructure Vulnerabilities in the Digital Age. In Protecting and Mitigating Against Advanced Threats: Deploying AI and Machine Learning (Wiley, forthcoming).  
+- Social Engineering: A Common Threat in Every Domain. Journal of Engineering Sciences, Vol 12, Issue 06 (June 2021; ISSN 0377-9254). Link: https://jespublication.com/upload/2021-V12I6084.pdf :contentReference[oaicite:26]{index=26}:contentReference[oaicite:27]{index=27}  
+- Mathematical Modeling of Infectious Disease Spread Using Differential Equations and Epidemiological Insights. Journal of Nonlinear Analysis & Optimization, Vol 15, Issue 1, No 4 (2024; ISSN 1906-9685). Link: https://www.jnao-nu.com/Vol.%2015,%20Issue.%2001,%20January-June%20:%202024/17.4.pdf :contentReference[oaicite:28]{index=28}:contentReference[oaicite:29]{index=29}  
+- An Experiment on COVID-19 Face Mask Identification Using ML Classification Algorithms. St. Martin’s Engineering College (ISBN 978-93-80831-66-4; Paper ID ICRSCIT-0209). Link: https://www.smec.ac.in/assets/images/Proceedings%20of%20ICRCSIT.pdf :contentReference[oaicite:30]{index=30}:contentReference[oaicite:31]{index=31}  
+
+ACADEMIC COURSEWORK PROJECTS  
+Quantum Machine Learning Project (Python, Gradient Boosting, Random Forest) Fall 2024 | Grade: A  
+• Achieved dataset randomness prediction accuracy of 0.92 using CNNs & Random Forest, enhancing data security with quantum-resistant algorithms.  
+• Developed a miniature neural network to optimize millions of Hamiltonian waves using HPC via Anaconda.  
+
+Linux-Based OS for Vulnerability Assessment (Bash Scripting, Debian-based) Spring 2024 | Grade: A  
+• Built a Debian-based OS that detected and mitigated 80% of web security vulnerabilities across domains.  
+• Optimized for lower-end hardware (4 GB RAM) to ensure broad compatibility.  
+
+Clustering Architecture for Image Analysis (R, Orange Data Mining) Fall 2023 | Grade: A  
+• Invented a clustering architecture using Orange & Posit Cloud, reducing image processing time by 30% and improving accuracy. :contentReference[oaicite:32]{index=32}:contentReference[oaicite:33]{index=33}  

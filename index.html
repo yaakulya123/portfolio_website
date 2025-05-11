@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<!-- This tells browsers which version of HTML we're using (HTML5) -->
+
+<html lang="en">
+<!-- The root element of the HTML document, 'lang' attribute specifies the language -->
+
+<head>
+    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Yaakulya Sabbani - Portfolio</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- The body contains all the visible content of the website -->
+
+    <!-- =================================================== -->
+    <!-- TERMINAL LOADING ANIMATION                          -->
+    <!-- This creates the cool Kali Linux terminal effect    -->
+    <!-- when the page first loads                           -->
+    <!-- =================================================== -->
+    <div class="loader-container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <!-- These are the fake buttons like in a real terminal window -->
+                <div class="terminal-buttons">
+                    <div class="terminal-button close-btn"></div>
+                    <div class="terminal-button minimize-btn"></div>
+                    <div class="terminal-button maximize-btn"></div>
+                </div>
+                <div class="terminal-title">root@kali: ~/intel — Terminal — 80×24</div>
+            </div>
+            <div class="terminal-content" id="terminal-content">
+                <!-- Terminal content will be dynamically generated with JavaScript -->
+                <!-- The script.js file will add text to make it look like real terminal commands -->
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================== -->
+    <!-- NAVIGATION BAR                                      -->
+    <!-- The fixed navigation at the top of the page         -->
+    <!-- =================================================== -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">YS</div>
+            <!-- Navigation links to different sections of the page -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger menu for mobile devices -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =================================================== -->
+    <!-- HERO SECTION                                        -->
+    <!-- The main banner section at the top of the page      -->
+    <!-- =================================================== -->
+    <section id="home" class="hero">
+        <!-- Particle.js animation in the background -->
+        <div id="particles-js"></div>
+        
+        <div class="hero-content">
+            <div class="hero-main">
+                <!-- Main heading - the name -->
+                <h1>YAAKULYA SABBANI</h1>
+                
+                <!-- Animated typing effect for the subtitle -->
+                <div class="typing-container">
+                    <p class="subtitle" id="typing-text">Applied Security & AI Researcher</p>
+                </div>
+                
+                <!-- Key stats with animated counters -->
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-number">CEH</span>
+                        <span class="hero-label">at 18</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-number">92%</span>
+                        <span class="hero-label">Detection</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-number">2.5+</span>
+                        <span class="hero-label">Years</span>
+                    </div>
+                </div>
+                
+                <!-- Call-to-action buttons -->
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary">Get in Touch</a>
+                    <a href="#projects" class="btn secondary">View Projects</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll down indicator -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- ABOUT SECTION                                       -->
+    <!-- Personal background, skills, and interests          -->
+    <!-- =================================================== -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="profile-container">
+                        <div class="profile-hex">
+                            <div class="profile-img-placeholder">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                        </div>
+                        <div class="profile-backdrop"></div>
+                    </div>
+                    <div class="about-tags">
+                        <span class="about-tag"><i class="fas fa-shield-alt"></i> Ethical Hacker</span>
+                        <span class="about-tag"><i class="fas fa-brain"></i> ML Researcher</span>
+                        <span class="about-tag"><i class="fas fa-university"></i> NYU Abu Dhabi</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="typing-effect">
+                        <span class="prompt">root@kali:~$</span>
+                        <span class="typed-text">whoami</span>
+                    </div>
+                    <h3 class="about-subtitle">Applied Security & AI Researcher</h3>
+                    <p>Passionate about securing digital environments and mitigating cyber threats through AI-driven security solutions. With 2.5 years of experience, I specialize in threat detection, malware analysis, and incident response using machine learning.</p>
+                    <p>Recognized as India's youngest ethical hacker (CEH at 18), achieved 92% phishing detection accuracy, and received the Best Intern Award for uncovering critical vulnerabilities.</p>
+                    
+                    <div class="tech-interests">
+                        <h4>Research Interests</h4>
+                        <div class="interest-pills">
+                            <span>Quantum Computing</span>
+                            <span>Neural Networks</span>
+                            <span>Cloud Security</span>
+                            <span>Malware Analysis</span>
+                            <span>Advanced Threat Detection</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-user-clock"></i></div>
+                            <div class="stat-info">
+                                <span class="number">2.5</span>
+                                <span class="label">Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="stat-info">
+                                <span class="number">92%</span>
+                                <span class="label">Phishing Detection</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-file-contract"></i></div>
+                            <div class="stat-info">
+                                <span class="number">1</span>
+                                <span class="label">Patent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Machine Learning & Security Researcher</h3>
+                        <h4>Center for Quantum and Topological Systems - Middle East</h4>
+                        <p class="date">Dec 2023 – June 2024</p>
+                        <ul>
+                            <li>Developed and trained machine learning model using Python and TensorFlow to classify phishing emails and malicious URLs, achieving up to 92% accuracy</li>
+                            <li>Designed a Fake-News Detection Model using machine learning, achieving 97.92% accuracy with Random Forest</li>
+                            <li>Conducted adversarial attacks on LLMs to assess security vulnerabilities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Junior Cyber Security Cloud Analyst Intern</h3>
+                        <h4>Cyber Jagrithi (Safety For Women & Children)</h4>
+                        <p class="date">Jan 2023 – May 2023</p>
+                        <ul>
+                            <li>Scanned websites for malware and security risks daily for 4 months, reporting 32 vulnerabilities for remediation</li>
+                            <li>Documented Cloud and Server Security findings and strategic proposals in 21 reports and 18 presentations</li>
+                            <li>Awarded Best Intern out of 24 peers for uncovering vulnerabilities in Adversarial Simulation and OWASP Juice Shop</li>
+                            <li>Assisted in strengthening AWS S3 security for 12 NGO sites serving over 1.3k users</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>L1 SOC Analyst</h3>
+                        <h4>YKS IT Services Pvt Ltd.</h4>
+                        <p class="date">Feb 2022 – Jun 2022</p>
+                        <ul>
+                            <li>Proactively monitored and analyzed security events using Splunk SIEM, triaging 500+ alerts monthly</li>
+                            <li>Investigated phishing attacks and endpoint breaches using Nessus and CrowdStrike EDR</li>
+                            <li>Conducted in-depth log analysis and network traffic monitoring using Wireshark and Suricata</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <span>3+ Years</span>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span><div class="skill-name"><i class="fab fa-python"></i>Python</div></span>
+                            <div class="progress-bar" data-progress="90"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span><div class="skill-name"><i class="fas fa-code"></i>C/C++</div></span>
+                            <div class="progress-bar" data-progress="80"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span><div class="skill-name"><i class="fas fa-chart-line"></i>R</div></span>
+                            <div class="progress-bar" data-progress="70"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span><div class="skill-name"><i class="fab fa-java"></i>Java</div></span>
+                            <div class="progress-bar" data-progress="70"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span><div class="skill-name"><i class="fab fa-js"></i>JavaScript</div></span>
+                            <div class="progress-bar" data-progress="75"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <span>Expert</span>
+                    <h3>Cybersecurity Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span><div class="skill-name"><i class="fas fa-shield-alt"></i>Threat Intelligence Analysis</div></span>
+                            <div class="progress-bar" data-progress="90"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span><div class="skill-name"><i class="fas fa-cogs"></i>Reverse Engineering</div></span>
+                            <div class="progress-bar" data-progress="85"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span><div class="skill-name"><i class="fas fa-key"></i>Cryptography</div></span>
+                            <div class="progress-bar" data-progress="80"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span><div class="skill-name"><i class="fas fa-bug"></i>Vulnerability Assessment</div></span>
+                            <div class="progress-bar" data-progress="95"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>International Certifications & Licenses</h2>
+            <div class="cert-path-container">
+                <div class="cert-path">
+                    <div class="cert-node ec-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-shield-alt"></i>
+                                <span class="cert-score">112/120</span>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Certified Ethical Hacker (CEH)</h3>
+                            <p>EC-Council Achievement Certification</p>
+                            <div class="cert-progress">
+                                <div class="progress-fill" style="width: 93%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-connector"></div>
+                    
+                    <div class="cert-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-user-secret"></i>
+                                <span class="cert-score">100/100</span>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Ethical Hacking Essentials (EHE)</h3>
+                            <p>EC-Council Achievement Certification</p>
+                            <div class="cert-progress">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-connector"></div>
+                    
+                    <div class="cert-node industry-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Web Application Penetration Tester (WAPT)</h3>
+                            <p>ICORX SERVICES PVT. LTD</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-connector"></div>
+                    
+                    <div class="cert-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-microscope"></i>
+                                <span class="cert-score">96/100</span>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Digital Forensics Essentials (DFE)</h3>
+                            <p>EC-Council Achievement Certification</p>
+                            <div class="cert-progress">
+                                <div class="progress-fill" style="width: 96%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-connector"></div>
+                    
+                    <div class="cert-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-network-wired"></i>
+                                <span class="cert-score">93/100</span>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Network Defense Essentials (NDE)</h3>
+                            <p>EC-Council Achievement Certification</p>
+                            <div class="cert-progress">
+                                <div class="progress-fill" style="width: 93%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cert-path secondary-path">
+                    <div class="cert-node company-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-building"></i>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Junior Cybersecurity Analyst</h3>
+                            <p>Cisco-Certified Security Associate</p>
+                            <div class="company-badge">Cisco</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-connector"></div>
+                    
+                    <div class="cert-node industry-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Diploma on Offensive Security Training</h3>
+                            <p>Tech Marshals Software R&D (Hands-On)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-connector"></div>
+                    
+                    <div class="cert-node industry-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>ISO/IEC 27001:2022 Information Security Associate™</h3>
+                            <p>Certified in compliance, audit readiness & continual improvement of ISMS</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-connector"></div>
+                    
+                    <div class="cert-node company-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Cybersecurity Risk Analyst</h3>
+                            <p>Risk assessment & compliance with security frameworks</p>
+                            <div class="company-badge">PwC Switzerland</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-connector"></div>
+                    
+                    <div class="cert-node company-node">
+                        <div class="cert-hexagon">
+                            <div class="cert-hex-inner">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Security Awareness Analyst</h3>
+                            <p>Advanced Phishing Email Simulator Project</p>
+                            <div class="company-badge">Mastercard</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>CloudTrail Analysis</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/yaakulya123/OpenSearch-CloudTrail-Analysis" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-container">
+                            <div class="project-image" style="background-color: rgba(109, 40, 217, 0.1);">
+                                <i class="fas fa-search project-icon"></i>
+                            </div>
+                        </div>
+                        <p>A documentation of deploying OpenSearch on a virtual machine for analyzing AWS CloudTrail logs. Includes Docker setup, configuration, and step-by-step instructions for cybersecurity monitoring.</p>
+                        <div class="project-tags">
+                            <span>Docker</span>
+                            <span>OpenSearch</span>
+                            <span>AWS</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>WannaCry Forensics</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/yaakulya123/WannaCry-Forensics" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-container">
+                            <div class="project-image" style="background-color: rgba(109, 40, 217, 0.1);">
+                                <i class="fas fa-shield-alt project-icon"></i>
+                            </div>
+                        </div>
+                        <p>A cybersecurity forensics toolkit for analyzing the WannaCry ransomware. Designed for educational purposes in controlled environments to help understand malware behavior and defense techniques.</p>
+                        <div class="project-tags">
+                            <span>Cybersecurity</span>
+                            <span>Forensics</span>
+                            <span>Malware Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>D3-Based Bot</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/yaakulya123/D3_Based_Bot" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-container">
+                            <div class="project-image" style="background-color: rgba(109, 40, 217, 0.1);">
+                                <i class="fas fa-robot project-icon"></i>
+                            </div>
+                        </div>
+                        <p>A futuristic academic advisor web application set in 2099 that integrates GPT API with RiveScript fallback, Chart.js visualizations, p5.js particle systems, and WebGL effects. Technical highlights include Chrome speech synthesis workarounds, context-aware UI highlighting, and responsive hexagon-based skill visualizations.</p>
+                        <div class="project-tags">
+                            <span>D3.js</span>
+                            <span>JavaScript</span>
+                            <span>GPT API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Quantum Machine Learning Project</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" style="visibility: hidden;">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-container">
+                            <div class="project-image" style="background-color: rgba(109, 40, 217, 0.1);">
+                                <i class="fas fa-atom project-icon"></i>
+                            </div>
+                        </div>
+                        <p>Achieved 92% dataset randomness prediction accuracy using CNN's & Random Forest Regressor, enhancing data security with quantum-resistant algorithms.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Quantum Computing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Linux-Based OS for Vulnerability Assessment</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" style="visibility: hidden;">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-container">
+                            <div class="project-image" style="background-color: rgba(109, 40, 217, 0.1);">
+                                <i class="fab fa-linux project-icon"></i>
+                            </div>
+                        </div>
+                        <p>Developed a comprehensive Debian-based OS that identified and mitigated 80% of web-based security vulnerabilities across various domains.</p>
+                        <div class="project-tags">
+                            <span>Bash</span>
+                            <span>Debian</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Clustering Architecture for Image Analysis</h3>
+                            <div class="project-links">
+                                <a href="https://yaakulya248.github.io/blog/working-with-image/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-container">
+                            <div class="project-image" style="background-color: rgba(109, 40, 217, 0.1);">
+                                <i class="fas fa-image project-icon"></i>
+                            </div>
+                        </div>
+                        <p>Invented a clustering architecture using Orange Data Mining & Posit Cloud, reducing image processing time by 30%.</p>
+                        <div class="project-tags">
+                            <span>R</span>
+                            <span>Orange Data Mining</span>
+                            <span>Cloud Computing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2>Publications & Patents</h2>
+            <div class="publications-list">
+                <div class="publication-item patent">
+                    <div class="publication-category">Patent</div>
+                    <h3>Immortal Bug Hunting Server (IBHS)</h3>
+                    <p>Application No: 202141035226. The Patent Office Journal No. 33/2021, Dated 13/08/2021, Page No. 35844.</p>
+                    <div class="publication-link">
+                        <a href="https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_5003_1/Part-1.pdf" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Patent
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="publication-item book">
+                    <div class="publication-category">Book</div>
+                    <h3>Python Programming - Crust to Core</h3>
+                    <p>ISBN: 978-1-387-26192-5; Lulu Publications, Hillsborough St., Raleigh, NC 27607, US; Date of Publication: October 4, 2021.</p>
+                    <div class="publication-link">
+                        <a href="https://www.lulu.com/shop/yaakulya-sabbani/python-programming-crust-to-core/ebook/product-4egvpj.html?page=1&pageSize=4" target="_blank">
+                            <i class="fas fa-book"></i> View Book
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="publication-item book">
+                    <div class="publication-category">Book</div>
+                    <h3>Securing Intelligence: Machine Learning Fundamentals</h3>
+                    <p>ISBN: B0DMTH7V9N; Scientific International Publishing House (SIPH); Date of Publication: November 11, 2024.</p>
+                    <div class="publication-link">
+                        <a href="https://www.amazon.in/SECURING-INTELLIGENCE-MACHINE-LEARNING-FUNDAMENTALS/dp/B0DMTH7V9N/ref=sr_1_1?dib=eyJ2IjoiMSJ9.JqPVuItp0QIHTl-YUuJhlA.Rlf_2S13S9L52xDB_ocjeDMmXyGyc1nckURr42M9wGg&dib_tag=se&keywords=Yaakulya&qid=1739024145&s=books&sr=1-1" target="_blank">
+                            <i class="fas fa-book"></i> View Book
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="publication-item research">
+                    <div class="publication-category">Research</div>
+                    <h3>Optimizing Performance and Security in IoT Healthcare Networks with Cloud Data Analytics</h3>
+                    <p>Publishing within a month.</p>
+                    <div class="publication-link">
+                        <a href="https://drive.google.com/file/d/12s3mLaEtlPwob6iP8IwfAbpOu9iSXz8o/view?usp=sharing" target="_blank">
+                            <i class="fas fa-file-alt"></i> Preview Paper
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="publication-item research">
+                    <div class="publication-category">Research</div>
+                    <h3>SHANE – Smart Heart Rate Analysis and Notification System for Emergencies</h3>
+                    <p>International Journal of Analytical and Experimental Modal Analysis (ISSN: 0886-9367).</p>
+                    <div class="publication-link">
+                        <a href="https://drive.google.com/file/d/1QsiBH1Djnd1dvZSGQdP9AkcMGQ9v6Tv8/view" target="_blank">
+                            <i class="fas fa-file-alt"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="publication-item research">
+                    <div class="publication-category">Research</div>
+                    <h3>Cybersecurity Infrastructure Vulnerabilities in the Digital Age</h3>
+                    <p>Accepted for inclusion in the edited book "Protecting and Mitigating Against Advanced Threats: Deploying AI and Machine Learning," by Wiley Publications (to be published).</p>
+                </div>
+                
+                <div class="publication-item research">
+                    <div class="publication-category">Research</div>
+                    <h3>Social Engineering: A Common Threat in Every Domain</h3>
+                    <p>Journal of Engineering Sciences, Vol. 12, Issue 06, June 2021 (ISSN: 0377-9254).</p>
+                    <div class="publication-link">
+                        <a href="https://jespublication.com/upload/2021-V12I6084.pdf" target="_blank">
+                            <i class="fas fa-file-alt"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="publication-item research">
+                    <div class="publication-category">Research</div>
+                    <h3>Mathematical Modeling of Infectious Disease Spread Using Differential Equations and Epidemiological Insights</h3>
+                    <p>Journal of Nonlinear Analysis and Optimization, Vol. 15, Issue 1, No. 4, 2024 (ISSN: 1906-9685).</p>
+                    <div class="publication-link">
+                        <a href="https://www.jnao-nu.com/Vol.%2015,%20Issue.%2001,%20January-June%20:%202024/17.4.pdf" target="_blank">
+                            <i class="fas fa-file-alt"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="publication-item research">
+                    <div class="publication-category">Research</div>
+                    <h3>An Experiment on Covid-19 Face Mask Identification Using Various Machine Learning Classification Algorithms</h3>
+                    <p>St. Martin's Engineering College, Secunderabad (ISBN: 978-93-80831-66-4; PAPER ID: ICRSCIT-0209).</p>
+                    <div class="publication-link">
+                        <a href="https://www.smec.ac.in/assets/images/Proceedings%20of%20ICRCSIT.pdf" target="_blank">
+                            <i class="fas fa-file-alt"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="awards">
+        <div class="container">
+            <h2>Awards & Achievements</h2>
+            <div class="awards-container">
+                <div class="award-card featured-award">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>World's Top 1% Ranker on HackerRank</h3>
+                        <p>Collaborated with Harvard, UCLA, and Cornell – successfully completed all levels of competitive programming.</p>
+                        <div class="award-link">
+                            <a href="https://www.hackerrank.com/leaderboard?filter=sabbaniyaakulya&filter_on=hacker&page=1&track=python&type=practice" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Achievement
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>2nd Prize - University Hackathon</h3>
+                        <p>Falcon Currency Transfer Portal, implementing advanced encryption algorithms (Rijndael algorithm & Triple DES) to ensure secure and efficient currency transfers, MENA Region.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>Mentor - QHack 2024</h3>
+                        <p>Appointed as a Mentor for the Prestigious QHack 2024, Internationally renowned Quantum Computing Hackathon.</p>
+                        <div class="award-link">
+                            <a href="https://sites.nyuad.nyu.edu/hackathon/index.php/teams/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>2nd Prize - MUN Debate Competition</h3>
+                        <p>State Level competition on the topic: Global Security and How Tech changes the World.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>Winner - Ethical Hacking Student Training</h3>
+                        <p>Telangana Cops Cyber Crime Assessment – Scholar Campaign, Defense Government of India.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>National Recognition for Fraud Prevention</h3>
+                        <p>Featured on a National NGO website. Created and delivered anti-fraud campaigns during the COVID pandemic, reaching 2 million+ citizens and coordinating 450+ participants and 37 volunteers.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>1st Place - AI-Cyber Wave Hackathon</h3>
+                        <p>Won over 22 Teams in AI-Cyber Wave event at Hackathon 2K22, hosted by SIET – An Autonomous Engineering & Technology University, with a reward of Rs. 25,000/-.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <span>ys5298@nyu.edu</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <span>Abu Dhabi, United Arab Emirates</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="contact-text">
+                                <h3>University</h3>
+                                <span>NYU Abu Dhabi</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-container">
+                        <h3>Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/yaakulya-sabbani/" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/yaakulya123" target="_blank" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://securenet.hashnode.dev/" target="_blank" class="social-link" title="Personal Blog">
+                                <i class="fas fa-blog"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <h3>Send Me a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yaakulya Sabbani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Chatbot Integration -->
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="config.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html> 

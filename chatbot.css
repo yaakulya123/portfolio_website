@@ -1,0 +1,367 @@
+/* ==============================================
+   CHATBOT STYLES - THE VISUAL APPEARANCE
+   ==============================================
+   This CSS file controls how the chatbot looks!
+   If you want to change colors or sizes, this is where to do it.
+*/
+
+/* CSS Variables - These make it easy to use the same colors throughout */
+:root {
+    --chat-primary: #6d28d9;      /* Main purple color */
+    --chat-secondary: #4f46e5;    /* Secondary blue-purple color */
+    --chat-dark-bg: #0f172a;      /* Dark background color */
+    --chat-card-bg: #1e293b;      /* Slightly lighter background for cards */
+    --chat-text: #f3f4f6;         /* Light text color */
+    --chat-light-text: #d1d5db;   /* Slightly darker text color */
+    --chat-accent: #a78bfa;       /* Accent color for highlights */
+    --chat-user-msg: #4338ca;     /* Background color for user messages */
+    --chat-bot-msg: #262c3a;      /* Background color for bot messages */
+    --chat-border: rgba(109, 40, 217, 0.3); /* Semi-transparent border color */
+    --chat-shadow: rgba(0, 0, 0, 0.3);      /* Shadow color */
+}
+
+/* ==============================================
+   CHAT BUTTON - THE BUTTON TO OPEN THE CHAT
+   ==============================================
+*/
+.chat-button {
+    position: fixed;         /* Fixed position means it stays in place while scrolling */
+    bottom: 30px;            /* Position from the bottom of the screen */
+    right: 30px;             /* Position from the right of the screen */
+    width: auto;             /* Auto width based on content */
+    height: 60px;            /* Fixed height */
+    background: linear-gradient(135deg, var(--chat-primary), var(--chat-secondary)); /* Cool gradient background */
+    color: var(--chat-text); /* Text color */
+    border-radius: 30px;     /* Rounded corners (half of height for a circle) */
+    display: flex;           /* Flexbox for easy centering */
+    align-items: center;     /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    cursor: pointer;         /* Show a pointer cursor on hover */
+    padding: 0 25px;         /* Add some horizontal padding */
+    box-shadow: 0 5px 15px var(--chat-shadow); /* Add a nice shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for animations */
+    z-index: 1000;           /* Ensure it appears above other content */
+    font-family: 'Poppins', sans-serif; /* Match the font with the rest of the site */
+}
+
+/* Style for the text in the button */
+.chat-button span {
+    margin-left: 10px;       /* Space between icon and text */
+    font-weight: 500;        /* Medium font weight */
+    font-size: 0.9rem;       /* Slightly smaller text */
+}
+
+/* Style for the icon in the button */
+.chat-button i {
+    font-size: 1.5rem;       /* Icon size */
+}
+
+/* What happens when you hover over the button */
+.chat-button:hover {
+    transform: translateY(-5px); /* Button lifts up a bit */
+    box-shadow: 0 8px 20px rgba(109, 40, 217, 0.4); /* Stronger shadow */
+}
+
+/* When the chat is open, hide the button */
+.chat-button.hidden {
+    opacity: 0;              /* Fully transparent */
+    visibility: hidden;      /* Actually hidden from view */
+    transform: translateY(20px); /* Moved down a bit */
+}
+
+/* ==============================================
+   CHAT CONTAINER - THE CHAT WINDOW ITSELF
+   ==============================================
+*/
+.chat-container {
+    position: fixed;         /* Fixed position like the button */
+    bottom: 30px;            /* Position from bottom */
+    right: 30px;             /* Position from right */
+    width: 380px;            /* Fixed width */
+    height: 500px;           /* Fixed height */
+    background: var(--chat-dark-bg); /* Dark background */
+    border-radius: 15px;     /* Rounded corners */
+    overflow: hidden;        /* Hide anything that overflows */
+    box-shadow: 0 10px 25px var(--chat-shadow); /* Nice shadow */
+    display: flex;           /* Use flexbox for layout */
+    flex-direction: column;  /* Stack children vertically */
+    z-index: 1001;           /* Higher than the button to appear on top */
+    opacity: 0;              /* Start invisible */
+    visibility: hidden;      /* Actually hidden */
+    transform: translateY(20px) scale(0.9); /* Start small and below final position */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Fancy bounce animation */
+    border: 1px solid var(--chat-border); /* Subtle border */
+    font-family: 'Poppins', sans-serif; /* Matching font */
+}
+
+/* When the chat is active (shown) */
+.chat-container.active {
+    opacity: 1;              /* Fully visible */
+    visibility: visible;     /* Not hidden anymore */
+    transform: translateY(0) scale(1); /* Full size and in correct position */
+}
+
+/* ==============================================
+   CHAT HEADER - THE TOP BAR OF THE CHAT WINDOW
+   ==============================================
+*/
+.chat-header {
+    padding: 15px 20px;      /* Padding inside the header */
+    background: var(--chat-card-bg); /* Slightly lighter than the main background */
+    display: flex;           /* Flexbox for layout */
+    justify-content: space-between; /* Space between title and close button */
+    align-items: center;     /* Center items vertically */
+    border-bottom: 1px solid rgba(109, 40, 217, 0.2); /* Subtle border at bottom */
+}
+
+/* Chat title text */
+.chat-title {
+    color: var(--chat-text); /* Light text color */
+    font-weight: 600;        /* Semi-bold font weight */
+    font-size: 1rem;         /* Standard font size */
+}
+
+/* Close button */
+.chat-close {
+    width: 30px;             /* Fixed width */
+    height: 30px;            /* Fixed height */
+    display: flex;           /* Flexbox for centering */
+    align-items: center;     /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    cursor: pointer;         /* Pointer cursor on hover */
+    border-radius: 50%;      /* Perfectly round */
+    background: rgba(109, 40, 217, 0.1); /* Semi-transparent background */
+    color: var(--chat-accent); /* Accent color for icon */
+    transition: all 0.2s ease; /* Smooth transition */
+}
+
+/* Close button on hover */
+.chat-close:hover {
+    background: rgba(109, 40, 217, 0.2); /* Slightly darker background */
+    transform: rotate(90deg); /* Rotate the X icon */
+}
+
+/* ==============================================
+   CHAT MESSAGES - WHERE THE CONVERSATION APPEARS
+   ==============================================
+*/
+.chat-messages {
+    flex: 1;                 /* Take up all available space */
+    padding: 20px;           /* Padding around messages */
+    overflow-y: auto;        /* Add scrollbar when needed */
+    display: flex;           /* Flexbox for layout */
+    flex-direction: column;  /* Stack messages vertically */
+    gap: 15px;               /* Space between messages */
+    background-image:         /* Subtle gradient background */
+        radial-gradient(circle at 20% 30%, rgba(109, 40, 217, 0.03) 0%, transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(79, 70, 229, 0.03) 0%, transparent 25%);
+}
+
+/* Individual message bubbles - base styles */
+.chat-message {
+    max-width: 80%;          /* Don't take up the full width */
+    padding: 12px 15px;      /* Padding inside bubbles */
+    border-radius: 15px;     /* Rounded corners */
+    line-height: 1.5;        /* Line spacing */
+    position: relative;      /* For positioning */
+    word-wrap: break-word;   /* Wrap long words */
+    font-size: 0.95rem;      /* Slightly smaller font */
+}
+
+/* User message bubbles - what you send */
+.user-message {
+    background: var(--chat-user-msg); /* Purple background */
+    color: var(--chat-text);  /* Light text color */
+    align-self: flex-end;     /* Align to the right */
+    border-bottom-right-radius: 5px; /* Special shape at the bottom right */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Bot message bubbles - what the AI sends */
+.bot-message {
+    background: var(--chat-bot-msg); /* Darker background */
+    color: var(--chat-light-text); /* Slightly darker text */
+    align-self: flex-start;   /* Align to the left */
+    border-bottom-left-radius: 5px; /* Special shape at the bottom left */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Links in bot messages */
+.bot-message a {
+    color: var(--chat-accent); /* Accent color for links */
+    text-decoration: underline; /* Underline links */
+    transition: all 0.2s ease; /* Smooth transition */
+}
+
+/* Links in bot messages on hover */
+.bot-message a:hover {
+    color: var(--chat-primary); /* Darken on hover */
+}
+
+/* ==============================================
+   TYPING INDICATOR - THE ANIMATED DOTS
+   ==============================================
+*/
+.typing-indicator {
+    align-self: flex-start;   /* Align to the left like bot messages */
+    background: var(--chat-bot-msg); /* Match bot message background */
+    padding: 12px 15px;       /* Same padding as messages */
+    border-radius: 15px;      /* Same rounded corners */
+    border-bottom-left-radius: 5px; /* Same special shape */
+    display: flex;            /* Flexbox for the dots */
+    align-items: center;      /* Center dots vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Same shadow */
+}
+
+/* Each dot in the typing indicator */
+.typing-indicator span {
+    width: 8px;               /* Dot width */
+    height: 8px;              /* Dot height */
+    margin: 0 2px;            /* Space between dots */
+    background: var(--chat-light-text); /* Dot color */
+    border-radius: 50%;       /* Perfectly round */
+    display: inline-block;    /* Display inline but with block properties */
+    opacity: 0.4;             /* Semi-transparent */
+}
+
+/* Animate the first dot */
+.typing-indicator span:nth-child(1) {
+    animation: typing 1.2s infinite 0s; /* Animation with no delay */
+}
+
+/* Animate the second dot with a slight delay */
+.typing-indicator span:nth-child(2) {
+    animation: typing 1.2s infinite 0.2s; /* Animation with 0.2s delay */
+}
+
+/* Animate the third dot with more delay */
+.typing-indicator span:nth-child(3) {
+    animation: typing 1.2s infinite 0.4s; /* Animation with 0.4s delay */
+}
+
+/* The actual animation for the dots */
+@keyframes typing {
+    0% { opacity: 0.4; transform: translateY(0); } /* Start position */
+    50% { opacity: 1; transform: translateY(-5px); } /* Middle position - higher and more opaque */
+    100% { opacity: 0.4; transform: translateY(0); } /* End position - back to start */
+}
+
+/* ==============================================
+   CHAT INPUT - WHERE THE USER TYPES MESSAGES
+   ==============================================
+*/
+.chat-input-container {
+    padding: 15px;           /* Padding around the input */
+    background: var(--chat-card-bg); /* Slightly lighter background */
+    display: flex;           /* Flexbox for layout */
+    align-items: center;     /* Center items vertically */
+    gap: 10px;               /* Space between input and button */
+    border-top: 1px solid rgba(109, 40, 217, 0.2); /* Subtle top border */
+}
+
+/* The text input field */
+.chat-input {
+    flex: 1;                 /* Take up all available space */
+    padding: 12px 15px;      /* Padding inside the input */
+    border-radius: 25px;     /* Rounded corners */
+    border: 1px solid rgba(109, 40, 217, 0.3); /* Subtle border */
+    background: rgba(15, 23, 42, 0.8); /* Semi-transparent dark background */
+    color: var(--chat-text); /* Light text color */
+    font-family: 'Poppins', sans-serif; /* Match the font */
+    font-size: 0.95rem;      /* Slightly smaller text */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* When the input is focused (clicked on) */
+.chat-input:focus {
+    outline: none;           /* Remove the default outline */
+    border-color: var(--chat-primary); /* Highlight the border */
+    background: rgba(15, 23, 42, 0.9); /* Slightly darker background */
+    box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.1); /* Subtle glow effect */
+}
+
+/* Placeholder text inside the input */
+.chat-input::placeholder {
+    color: rgba(209, 213, 219, 0.5); /* Semi-transparent light color */
+}
+
+/* Send button */
+.chat-send {
+    width: 40px;             /* Fixed width */
+    height: 40px;            /* Fixed height */
+    border-radius: 50%;      /* Perfectly round */
+    background: var(--chat-primary); /* Primary color background */
+    color: var(--chat-text); /* Light text color */
+    border: none;            /* No border */
+    display: flex;           /* Flexbox for centering */
+    align-items: center;     /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    cursor: pointer;         /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Send button on hover */
+.chat-send:hover {
+    background: var(--chat-secondary); /* Change to secondary color */
+    transform: scale(1.05);  /* Slightly larger */
+}
+
+/* Icon inside the send button */
+.chat-send i {
+    font-size: 1rem;         /* Icon size */
+}
+
+/* ==============================================
+   SCROLLBAR STYLING - MAKE IT LOOK NICE
+   ==============================================
+*/
+/* The scrollbar itself */
+.chat-messages::-webkit-scrollbar {
+    width: 6px;              /* Thin scrollbar */
+}
+
+/* The track (background) of the scrollbar */
+.chat-messages::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.5); /* Semi-transparent dark background */
+}
+
+/* The draggable part of the scrollbar */
+.chat-messages::-webkit-scrollbar-thumb {
+    background: rgba(109, 40, 217, 0.3); /* Semi-transparent primary color */
+    border-radius: 10px;     /* Rounded corners */
+}
+
+/* The draggable part on hover */
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: rgba(109, 40, 217, 0.5); /* Darker when hovered */
+}
+
+/* ==============================================
+   RESPONSIVE DESIGN - MAKE IT WORK ON MOBILE
+   ==============================================
+*/
+@media (max-width: 480px) {
+    /* Make the chat button smaller on mobile */
+    .chat-button {
+        width: 60px;         /* Fixed smaller width */
+        padding: 0;          /* Remove padding */
+        border-radius: 50%;  /* Perfectly round */
+        right: 20px;         /* Closer to the edge */
+        bottom: 20px;        /* Closer to the bottom */
+    }
+    
+    /* Hide the text on the button - just show the icon */
+    .chat-button span {
+        display: none;       /* Hide the text completely */
+    }
+    
+    /* Adjust the chat container for mobile */
+    .chat-container {
+        width: 100%;         /* Full width of the screen */
+        height: 70vh;        /* 70% of the viewport height */
+        bottom: 0;           /* Align to the bottom */
+        right: 0;            /* Align to the right */
+        border-radius: 15px 15px 0 0; /* Rounded corners only at the top */
+    }
+} 
