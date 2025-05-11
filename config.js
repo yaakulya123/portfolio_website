@@ -32,12 +32,12 @@ const CONFIG = {
         // 2. User authentication if each user needs their own API access
         
         // Access pattern is protected from exposure
-        const encodedAccess = atob('VGhpcyBpcyBub3QgYSByZWFsIGtleS4gUmVwbGFjZSB3aXRoIHlvdXIgZW5jb2RlZCBrZXkgYWZ0ZXIgZGVwbG95bWVudC4=');
+        const encodedAccess = atob('c2stcHJvai1pZDlKN05fbUFzazBGSm5YRUJEUzdKV3BkVlpDRlVtUk05Nk1BZVRkazQwaUN1Ym5qWVo2Q0JLZEZQc1RkOUdPb3Y3cERxZndRY1QzQmxia0ZKTk15RXBKYUkwdWZhRlpaYzNWa1VLaFhjd2xuTDJtTEZPZUxpbnloUXFWUGtWU1k3bFlrMkNqUnZ3bnJWVkF6WFhSZVpqVlVnd0E=');
         
         return {
             apiEndpoint: "https://api.openai.com/v1/chat/completions",
             authorization: `Bearer ${encodedAccess}`,
-            isConfigured: false // Set to true after you've properly configured it post-deployment
+            isConfigured: true // Set to true after you've properly configured it post-deployment
         };
     }
 }; 
